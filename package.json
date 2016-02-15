@@ -1,0 +1,88 @@
+{
+  "scripts": {
+    "test": "eslint . && mocha ./test/functional ./test/unit",
+    "lint": "eslint .",
+    "test-only": "mocha ./test/functional ./test/unit",
+    "test-travis": "eslint . && mocha -R spec ./test/functional ./test/unit"
+  },
+  "optionalDependencies": {
+    "crypt3": ">=0.2.0",
+    "fs-ext": ">=0.5.0"
+  },
+  "repository": {
+    "url": "git://github.com/rlidwka/sinopia",
+    "type": "git"
+  },
+  "bin": {
+    "sinopia": "./bin/sinopia"
+  },
+  "engines": {
+    "node": ">=5"
+  },
+  "main": "index.js",
+  "devDependencies": {
+    "grunt-contrib-watch": ">=0.6.1",
+    "grunt-contrib-less": ">=1.2.0",
+    "onclick": ">=0.1.0",
+    "browserify": ">=13",
+    "grunt": ">=0.4.5",
+    "grunt-browserify": ">=4.0.1",
+    "mocha": ">=2.4.5",
+    "transition-complete": ">=0.0.2",
+    "unopinionate": ">=0.0.4",
+    "bluebird": ">=3.3",
+    "eslint": ">=2.0.0",
+    "browserify-handlebars": "1.x",
+    "rimraf": ">=2.5.2",
+    "grunt-cli": "*"
+  },
+  "dependencies": {
+    "JSONStream": "1.x",
+    "highlight.js": "9.x",
+    "bunyan": ">=1.6.0",
+    "es6-shim": "0.34.x",
+    "sinopia-htpasswd": ">=0.4.5",
+    "minimatch": ">=3.0.0",
+    "async": ">=1.5.2",
+    "compression": ">=1.6.1",
+    "mkdirp": ">=0.5.1",
+    "cookies": ">=0.5.1",
+    "express-json5": ">=0.1.0",
+    "express": ">=5.0.0-0",
+    "semver": ">=5.1.0",
+    "body-parser": ">=1.15.0",
+    "js-yaml": ">=3.5.3",
+    "render-readme": ">=1.3.1",
+    "jju": "1",
+    "lunr": ">=0.6.0",
+    "handlebars": "4.x",
+    "commander": ">=2.9.0",
+    "http-errors": ">=1.4.0",
+    "readable-stream": "~2.0.5",
+    "request": ">=2.69.0"
+  },
+  "name": "sinopia",
+  "version": "1.4.0",
+  "keywords": [
+    "private",
+    "package",
+    "repository",
+    "registry",
+    "modules",
+    "proxy",
+    "server"
+  ],
+  "author": {
+    "email": "alex@kocharin.ru",
+    "name": "Alex Kocharin"
+  },
+  "preferGlobal": true,
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "license": {
+    "url": "http://www.wtfpl.net/txt/copying/",
+    "type": "WTFPL"
+  },
+  "description": "Private npm repository server"
+}
